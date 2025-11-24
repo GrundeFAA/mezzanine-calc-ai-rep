@@ -6,7 +6,6 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Grid } from '@react-three/drei';
-import * as THREE from 'three';
 import { MezzanineConfig } from '../types';
 
 interface MezzanineViewerProps {

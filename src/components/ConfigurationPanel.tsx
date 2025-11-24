@@ -73,7 +73,7 @@ export const ConfigurationPanel: React.FC<ConfigurationPanelProps> = ({
     onChange({
       ...config,
       accessories: config.accessories.map((a) =>
-        a.id === id ? { ...a, ...updates } : a
+        a.id === id ? ({ ...a, ...updates } as AnyAccessory) : a
       ),
     });
   };
